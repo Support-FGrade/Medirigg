@@ -1380,7 +1380,6 @@ grid-template-columns:1fr;
 .dropdown {
     position: relative;
 }
-
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -1388,6 +1387,7 @@ grid-template-columns:1fr;
     background: #fff;
     display: none;
     min-width: 200px;
+    padding: 4px 0;      /* Reduces white space above and below */
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     z-index: 999;
 }
@@ -1397,9 +1397,10 @@ grid-template-columns:1fr;
 }
 
 .dropdown-menu li a {
-    padding: 10px 15px;
     display: block;
+    padding: 7px 15px;   
     color: #333;
+    line-height: 1.3;
 }
 
 /* SHOW ON HOVER */
